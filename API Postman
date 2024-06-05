@@ -1,0 +1,1224 @@
+{
+	"info": {
+		"_postman_id": "8e412c6f-340f-4ff1-93bb-eb618c226216",
+		"name": "Personal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29328963"
+	},
+	"item": [
+		{
+			"name": "LMIS",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Sign In",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"pistone\",\r\n    \"password\": \"0888116194\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/api/v1/users/signin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"users",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Catalogue per user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/user_catalogue/1",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"user_catalogue",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get users",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}users/user",
+									"host": [
+										"{{test}}users"
+									],
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Test Preferences",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/test_preference",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"test_preference"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Catalogues per Status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/catalogue_status/1",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"catalogue_status",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get returned Resources",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/returned_resources",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"returned_resources"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get users preferences and behaviours",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/preferences_behaviour",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"preferences_behaviour"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get users preferences and behaviours per User",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/user_preferences_behaviour/1/",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"user_preferences_behaviour",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"member\",\r\n    \"middle_name\": \"\",\r\n    \"last_name\": \"sanjama\",\r\n    \"email\": \"pistonsanjama45@gmail.com\",\r\n    \"username\": \"member\",\r\n    \"password\": \"0888116194\",\r\n    \"postal_address\": \"Box 31 Ngabu\",\r\n    \"physical_address\": \"Ngabu, Chikwawa\",\r\n    \"role_id\": 2,\r\n    \"qualification\": \"bachelors Degree\",\r\n    \"experience\": \"4 Years\",\r\n    \"skill_set\": \"Java\",\r\n    \"grade\": \"sample\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}users/user/add",
+									"host": [
+										"{{test}}users"
+									],
+									"path": [
+										"user",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lend Resource",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 9,\r\n    \"membership_id\": 1,\r\n    \"library_catalogue_id\": 38,\r\n    \"duration_in_days\": 1,\r\n    \"lending_status_id\": 1,\r\n    \"borrow_state\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/add",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"add"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Lend Resource",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"user_id\": 1,\r\n    \"membership_id\": 1,\r\n    \"library_catalogue_id\": 3,\r\n    \"duration_in_days\": 10,\r\n    \"lending_status_id\": 1,\r\n    \"borrow_state\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{test}}library_catalogue/user_catalogue/add",
+											"host": [
+												"{{test}}library_catalogue"
+											],
+											"path": [
+												"user_catalogue",
+												"add"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 02 Jun 2024 11:12:25 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.4"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "341"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"catalogue_id\": 8,\n    \"date_lent\": \"2024-06-02T11:12:18.632Z\",\n    \"date_returned\": null,\n    \"duration_in_days\": 10,\n    \"transaction\": null,\n    \"user\": {\n        \"user_id\": 1,\n        \"first_name\": \"Pistone\",\n        \"last_name\": \"sanjama\"\n    },\n    \"borrowing_state\": {\n        \"borrow_state_id\": 1,\n        \"borrow_state\": \"Good\"\n    },\n    \"lending_status\": {\n        \"lending_status_id\": 1,\n        \"lending_status\": \"Pending\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Return Resource",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 1,\r\n    \"membership_id\": 1,\r\n    \"library_catalogue_id\": 3,\r\n    \"user_catalogue_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/return_resource",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"return_resource"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Lend Resource",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"user_id\": 1,\r\n    \"membership_id\": 1,\r\n    \"library_catalogue_id\": 3,\r\n    \"duration_in_days\": 10,\r\n    \"lending_status_id\": 1,\r\n    \"borrow_state\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{test}}library_catalogue/user_catalogue/add",
+											"host": [
+												"{{test}}library_catalogue"
+											],
+											"path": [
+												"user_catalogue",
+												"add"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 02 Jun 2024 11:12:25 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.4"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "341"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"catalogue_id\": 8,\n    \"date_lent\": \"2024-06-02T11:12:18.632Z\",\n    \"date_returned\": null,\n    \"duration_in_days\": 10,\n    \"transaction\": null,\n    \"user\": {\n        \"user_id\": 1,\n        \"first_name\": \"Pistone\",\n        \"last_name\": \"sanjama\"\n    },\n    \"borrowing_state\": {\n        \"borrow_state_id\": 1,\n        \"borrow_state\": \"Good\"\n    },\n    \"lending_status\": {\n        \"lending_status_id\": 1,\n        \"lending_status\": \"Pending\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Close lending Activity",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"return_state_id\": 1,\r\n    \"user_catalogue_id\": 3,\r\n    \"library_catalogue_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/close_lending_activity",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"close_lending_activity"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Lend Resource",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"user_id\": 1,\r\n    \"membership_id\": 1,\r\n    \"library_catalogue_id\": 3,\r\n    \"duration_in_days\": 10,\r\n    \"lending_status_id\": 1,\r\n    \"borrow_state\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{test}}library_catalogue/user_catalogue/add",
+											"host": [
+												"{{test}}library_catalogue"
+											],
+											"path": [
+												"user_catalogue",
+												"add"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 02 Jun 2024 11:12:25 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.4"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "341"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"catalogue_id\": 8,\n    \"date_lent\": \"2024-06-02T11:12:18.632Z\",\n    \"date_returned\": null,\n    \"duration_in_days\": 10,\n    \"transaction\": null,\n    \"user\": {\n        \"user_id\": 1,\n        \"first_name\": \"Pistone\",\n        \"last_name\": \"sanjama\"\n    },\n    \"borrowing_state\": {\n        \"borrow_state_id\": 1,\n        \"borrow_state\": \"Good\"\n    },\n    \"lending_status\": {\n        \"lending_status_id\": 1,\n        \"lending_status\": \"Pending\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Change Catalogue Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token db74c9b87b22caadb9be02424b82a62f12a2d010"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 3,\r\n    \"user_catalogue_id\": 3,\r\n    \"lending_status_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/user_catalogue/change_catalogue_status",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"user_catalogue",
+										"change_catalogue_status"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Lend Resource",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"user_id\": 1,\r\n    \"membership_id\": 1,\r\n    \"library_catalogue_id\": 3,\r\n    \"duration_in_days\": 10,\r\n    \"lending_status_id\": 1,\r\n    \"borrow_state\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{test}}library_catalogue/user_catalogue/add",
+											"host": [
+												"{{test}}library_catalogue"
+											],
+											"path": [
+												"user_catalogue",
+												"add"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 02 Jun 2024 11:12:25 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.4"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "341"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"catalogue_id\": 8,\n    \"date_lent\": \"2024-06-02T11:12:18.632Z\",\n    \"date_returned\": null,\n    \"duration_in_days\": 10,\n    \"transaction\": null,\n    \"user\": {\n        \"user_id\": 1,\n        \"first_name\": \"Pistone\",\n        \"last_name\": \"sanjama\"\n    },\n    \"borrowing_state\": {\n        \"borrow_state_id\": 1,\n        \"borrow_state\": \"Good\"\n    },\n    \"lending_status\": {\n        \"lending_status_id\": 1,\n        \"lending_status\": \"Pending\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Membership",
+					"item": [
+						{
+							"name": "Get Memberships per Status",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/membership_status/pending/1/1/",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"membership_status",
+										"pending",
+										"1",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Membership Status",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role_id\": 1,\r\n    \"membership_id\": 1,\r\n    \"membership_status_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/membership_status/change_status",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"membership_status",
+										"change_status"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Books",
+					"item": [
+						{
+							"name": "Add Book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isbn\": \"978-0-06-112008-4\",\r\n    \"book_name\": \"To Kill a Mockingbird\",\r\n    \"author\": \"Harper Lee\",\r\n    \"number_of_copies\": 10,\r\n    \"publication_date\": \"1960-01-01\",\r\n    \"current_condition\": \"Good condition\",\r\n    \"resource_type_id\": 1,\r\n    \"genre_id\": 1,\r\n    \"format_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/book/add",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"book",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all books",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/book",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"book"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Book",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/book/978-0-545-01022",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"book",
+										"978-0-545-01022"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Newspapers",
+					"item": [
+						{
+							"name": "Add Newspaper",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"url\": \"www.google.com\",\r\n    \"content\": \"\",\r\n    \"title\": \"Sample title\",\r\n    \"publication_date\": \"2024-04-10\",\r\n    \"current_condition\": \"Good condition\",\r\n    \"source\": \"Good condition\",\r\n    \"resource_type_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/newspaper/add",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"newspaper",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Newspapers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/newspaper",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"newspaper"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Newspaper",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/newspaper/1",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"newspaper",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Articles",
+					"item": [
+						{
+							"name": "Add Article",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"author\": \"NOVA Information Management School (NOVA IMS)\",\r\n    \"content\": \"With fast-growing technology, schools have to adapt and use technology constantly as a tool to grow. This study aims to understand the influence of computer factors on students' academic achievement. We propose a model on the influence of computer attitudes, computer learning environments, computer learning motivations, computer confidence, computer use, computer self-efficacy, loneliness, mothers' education, parents' marital status and family size on academic achievement (AA). To validate the conceptual model, 286 students aged 16–18 years old answered an online questionnaire. The most important drivers that positively affect AA are computer use, employment motivations, and mothers' education. While enjoyment attitudes, school environment, interest motivations, and loneliness influence AA negatively. Also, family size and computer self-efficacy work as moderators, and computer use works as a mediator between computer learning environments and academic achievement.\",\r\n    \"url\": \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8920860/\",\r\n    \"title\": \"Influence of computers in students’ academic achievement\",\r\n    \"publication_date\": \"2024-02-24\",\r\n    \"current_condition\": \"Good condition\",\r\n    \"resource_type_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{test}}library_catalogue/article/add",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"article",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Articles",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/article",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Article",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/article/1",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"article",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reports",
+					"item": [
+						{
+							"name": "Get resources per Category",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/reports/library_resources_categories",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"reports",
+										"library_resources_categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get resources per Month",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/reports/library_resources_month",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"reports",
+										"library_resources_month"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all enrolled members",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/reports/enrolled_members",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"reports",
+										"enrolled_members"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all borrowed resources",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token ffc09b1253aaa3c14dcbe74940bcf2493dc842b9"
+									}
+								],
+								"url": {
+									"raw": "{{test}}library_catalogue/reports/borrowed_resources",
+									"host": [
+										"{{test}}library_catalogue"
+									],
+									"path": [
+										"reports",
+										"borrowed_resources"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 84094f8b87390dc363df614aed13f2d6a9c49560"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/v1/users/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
